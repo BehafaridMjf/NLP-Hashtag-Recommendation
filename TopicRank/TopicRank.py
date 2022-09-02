@@ -3,7 +3,7 @@ import pke
 from pke.lang import stopwords
 
 
-extractor = pke.unsupervised.YAKE()
+extractor = pke.unsupervised.TopicRank()
 
 stoplist = stopwords.get('english')
 extractor.load_document(input='path',
